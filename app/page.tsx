@@ -82,7 +82,7 @@ export default function Home() {
       <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-pink-900/20 pointer-events-none" />
       
       {/* Robotic Moving Head Lights - Cool Dynamic Version */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0" style={{ transform: 'translateZ(0)', willChange: 'transform' }}>
+      <div className="hidden md:block fixed inset-0 overflow-hidden pointer-events-none z-0" style={{ transform: 'translateZ(0)', willChange: 'transform' }}>
         {/* Light 1 - Left side - Blue/Cyan */}
         <motion.div
           className="robotic-light-modern"
@@ -105,7 +105,7 @@ export default function Home() {
             />
           </div>
           <motion.div 
-            className="modern-light-beam modern-beam-cyan" 
+            className="modern-light-beam modern-beam-blue" 
             style={{ 
               rotate: light1BeamRotate,
             }} 
@@ -123,7 +123,7 @@ export default function Home() {
             rotate: light2Rotate,
           }}
         >
-          <div className="modern-light-core modern-light-red">
+          <div className="modern-light-core modern-light-purple">
             <div className="light-housing" />
             <div className="light-lens-ring" />
             <div className="light-inner-core" />
@@ -134,7 +134,7 @@ export default function Home() {
             />
           </div>
           <motion.div 
-            className="modern-light-beam modern-beam-red" 
+            className="modern-light-beam modern-beam-purple" 
             style={{ 
               rotate: light2BeamRotate,
             }} 
@@ -181,7 +181,7 @@ export default function Home() {
             rotate: light4Rotate,
           }}
         >
-          <div className="modern-light-core modern-light-green">
+          <div className="modern-light-core modern-light-blue">
             <div className="light-housing" />
             <div className="light-lens-ring" />
             <div className="light-inner-core" />
@@ -192,7 +192,7 @@ export default function Home() {
             />
           </div>
           <motion.div 
-            className="modern-light-beam modern-beam-green" 
+            className="modern-light-beam modern-beam-blue" 
             style={{ 
               rotate: light4BeamRotate,
             }} 
@@ -239,7 +239,7 @@ export default function Home() {
             rotate: light6Rotate,
           }}
         >
-          <div className="modern-light-core modern-light-pink">
+          <div className="modern-light-core modern-light-purple">
             <div className="light-housing" />
             <div className="light-lens-ring" />
             <div className="light-inner-core" />
@@ -250,7 +250,7 @@ export default function Home() {
             />
           </div>
           <motion.div 
-            className="modern-light-beam modern-beam-pink" 
+            className="modern-light-beam modern-beam-purple" 
             style={{ 
               rotate: light6BeamRotate,
             }} 
